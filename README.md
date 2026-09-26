@@ -12,7 +12,7 @@
 
 Projet de jeu de bataille navale développé en Java avec LibGDX dans le cadre d'un projet universitaire.
 
-> **Contexte.** Projet d'équipe réalisé à trois dans le cadre du cursus Epitech (2025). L'historique du dépôt conserve les commits de chacun.
+> **Contexte.** Projet d'équipe réalisé à trois pendant ma formation (2025). L'historique du dépôt conserve les commits de chacun.
 
 ## Ma contribution
 
