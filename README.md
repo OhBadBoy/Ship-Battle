@@ -4,6 +4,25 @@ Projet de jeu de bataille navale développé en Java avec LibGDX dans le cadre d
 
 ![Logo](assets/logo.png)
 
+> **Contexte.** Projet d'équipe réalisé à trois dans le cadre du cursus Epitech (2025). L'historique du dépôt conserve les commits de chacun.
+
+## Ma contribution
+
+Mes contributions sont consultables dans [l'historique du dépôt](https://github.com/OhBadBoy/Ship-Battle/commits/main/?author=OhBadBoy) :
+
+- Modèle des navires : classe abstraite `Ship` et types `Carrier`, `Cruiser`, `Destroyer` et `Torpedo`, avec leurs méthodes de jeu.
+- Réponses d'attaque (`AttackResponse`) et énumérations d'états de partie.
+- Documentation Javadoc des classes et harmonisation des constructeurs.
+- Interface de placement des navires avec LibGDX : aperçu qui suit le curseur, rotation, alignement sur les cases, changement de sélection, réinitialisation, validation avant le début de partie, mise en page adaptée à la fenêtre.
+
+L'intelligence artificielle, la suite de tests et la couverture de code sont des travaux d'équipe : je ne me les attribue pas.
+
+## Aperçu
+
+![Écran de placement des navires](gdd-assets/ship_placement_menu.png)
+
+*Écran de placement des navires (interface LibGDX).*
+
 ## Description
 
 Implémentation complète du jeu classique de bataille navale avec :
@@ -33,7 +52,7 @@ Implémentation complète du jeu classique de bataille navale avec :
 |-------------------------------|---------|----------|
 | Porte-avion (Carrier)         | 5 cases | 1        |
 | Croiseur (Cruiser)            | 4 cases | 1        |
-| Contre-derailleur (Destroyer) | 3 cases | 2        |
+| Contre-torpilleur (Destroyer) | 3 cases | 2        |
 | Torpilleur (Torpedo)          | 2 cases | 1        |
 
 ### Bonus
@@ -66,6 +85,8 @@ Implémentation complète du jeu classique de bataille navale avec :
 # Exécuter les tests
 ./gradlew test
 ```
+
+Sous Windows, utilisez `gradlew.bat` à la place de `./gradlew`.
 
 ### Création du JAR
 ```bash
@@ -126,11 +147,11 @@ Les assets proviennent de sources open source :
 
 ## Documentation
 
-📖 **Documentation en ligne** : [https://crisxzu.github.io/ShipBattle/](https://crisxzu.github.io/ShipBattle/)
-
 - **Game Design Document** : [game design document.md](game%20design%20document.md)
-- **Javadoc** : [docs/javadoc/index.html](docs/javadoc/index.html) | [En ligne](https://crisxzu.github.io/ShipBattle/javadoc/)
-- **Couverture de code** : [docs/coverage/index.html](docs/coverage/index.html) | [En ligne](https://crisxzu.github.io/ShipBattle/coverage/)
+- **Javadoc** : `docs/javadoc/index.html` (fichiers HTML générés, à ouvrir en local)
+- **Couverture de code** : `docs/coverage/index.html` (rapport JaCoCo, à ouvrir en local)
+
+La documentation en ligne (GitHub Pages) citée dans la version d'origine de ce README n'est plus disponible.
 
 ### Diagrammes UML
 
@@ -139,8 +160,6 @@ Les assets proviennent de sources open source :
 - **Vues GUI** : [uml-gui-views.md](docs/uml-gui-views.md) - Interfaces graphiques et handlers
 
 ### Couverture de code (JaCoCo)
-
-- **Rapport HTML** : [docs/coverage/index.html](docs/coverage/index.html)
 
 | Package            | Couverture Instructions | Couverture Branches |
 |--------------------|-------------------------|---------------------|
@@ -151,7 +170,12 @@ Les assets proviennent de sources open source :
 
 > Note : Les packages `view.gui` et `controller.gui` ne sont pas encore testés pour le moment, leur dépendance à libGDX rend la question plus délicate.
 
-Généré via `./gradlew :core:test :core:jacocoTestReport`
+Ces taux sont ceux annoncés par l'équipe pour les packages `model` et `model.ai` ; ils n'ont pas été recalculés. Rapport généré via `./gradlew :core:test :core:jacocoTestReport`.
+
+## Limites connues
+
+- Aucune archive précompilée n'est publiée dans ce dépôt : `RELEASE_NOTES.md` mentionne des archives Windows et macOS qui n'y sont pas disponibles. Le jeu se lance avec Gradle.
+- L'interface et les contrôleurs ne sont pas couverts par les tests automatisés.
 
 ## Auteurs
 
