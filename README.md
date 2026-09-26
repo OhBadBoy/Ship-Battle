@@ -1,8 +1,16 @@
-# ShipBattle - Bataille Navale
+<div align="center">
+
+<img src="assets/logo.png" alt="ShipBattle" width="260">
+
+# ShipBattle
+
+**Bataille navale en Java avec LibGDX**
+
+`Java` `LibGDX` `Gradle` `JUnit 5` `MVC`
+
+</div>
 
 Projet de jeu de bataille navale développé en Java avec LibGDX dans le cadre d'un projet universitaire.
-
-![Logo](assets/logo.png)
 
 > **Contexte.** Projet d'équipe réalisé à trois dans le cadre du cursus Epitech (2025). L'historique du dépôt conserve les commits de chacun.
 
@@ -19,9 +27,13 @@ L'intelligence artificielle, la suite de tests et la couverture de code sont des
 
 ## Aperçu
 
-![Écran de placement des navires](gdd-assets/ship_placement_menu.png)
+<div align="center">
 
-*Écran de placement des navires (interface LibGDX).*
+<img src="gdd-assets/ship_placement_menu.png" alt="Écran de placement des navires" width="640">
+
+<sub>Écran de placement des navires (interface LibGDX)</sub>
+
+</div>
 
 ## Description
 
