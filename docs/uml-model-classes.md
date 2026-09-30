@@ -1,5 +1,7 @@
 # ShipBattle - Diagramme de Classes (Modèles)
 
+La [répartition des rôles](REPARTITION_ROLES.md) précise les responsabilités initiales de Chris, Daouda et James, les chemins actuels des classes et les consignes communes de Javadoc et de commits. Les attributs, méthodes et relations UML doivent rester cohérents avec le code. Ce diagramme contient aussi des évolutions au-delà du découpage initial ; leur présence n'attribue pas automatiquement leur réalisation à un seul participant.
+
 ```mermaid
 classDiagram
     direction TB

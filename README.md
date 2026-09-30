@@ -14,16 +14,28 @@ Projet de jeu de bataille navale développé en Java avec LibGDX dans le cadre d
 
 > **Contexte.** Projet d'équipe réalisé à trois pendant ma formation (2025). L'historique du dépôt conserve les commits de chacun.
 
-## Ma contribution
+## Répartition initiale de l'équipe
 
-Mes contributions sont consultables dans [l'historique du dépôt](https://github.com/OhBadBoy/Ship-Battle/commits/main/?author=OhBadBoy) :
+| Participant | Responsabilités initiales |
+|---|---|
+| **Chris** | Base du projet et préparation des branches ; contrôleur de jeu (`GameController` dans la consigne initiale), `ConsoleView`, modèles `Player` et `Game`. |
+| **Daouda** | Modèles `Grid`, `Cell` et `Coordinate` ; recherches sur la Javadoc et les conventions de commits avec James. |
+| **James** | Classe abstraite `Ship` et ses descendants, `AttackResponse`, enums `AttackResult`, `Direction` et `GameState` ; recherches sur la Javadoc et les conventions de commits avec Daouda. |
+
+Les trois participants doivent documenter leur code dès le début, avec une Javadoc en anglais, brève et concise, et respecter les attributs et méthodes de l'UML. La [répartition détaillée](docs/REPARTITION_ROLES.md) relie chaque classe à son chemin actuel et précise les règles communes. Cette consigne historique, retransmise le 30 septembre 2026, ne donne ni noms de branches Java ni choix confirmé entre Conventional Commits et Gitmoji.
+
+Ces responsabilités initiales n'attribuent pas exclusivement les évolutions ultérieures. Le contrôleur console actuel est `ConsoleGameController` ; le `GameController` du package GUI est distinct.
+
+## Contributions de James
+
+Les contributions de James sont consultables dans [l'historique du dépôt](https://github.com/OhBadBoy/Ship-Battle/commits/main/?author=OhBadBoy) :
 
 - Modèle des navires : classe abstraite `Ship` et types `Carrier`, `Cruiser`, `Destroyer` et `Torpedo`, avec leurs méthodes de jeu.
 - Réponses d'attaque (`AttackResponse`) et énumérations d'états de partie.
 - Documentation Javadoc des classes et harmonisation des constructeurs.
 - Interface de placement des navires avec LibGDX : aperçu qui suit le curseur, rotation, alignement sur les cases, changement de sélection, réinitialisation, validation avant le début de partie, mise en page adaptée à la fenêtre.
 
-L'intelligence artificielle, la suite de tests et la couverture de code sont des travaux d'équipe : je ne me les attribue pas.
+Le travail sur le placement LibGDX complète le périmètre initial de James. L'intelligence artificielle, la suite de tests et la couverture de code sont des travaux d'équipe ; elles ne lui sont pas attribuées individuellement.
 
 ## Aperçu
 
@@ -141,8 +153,10 @@ ShipBattle/
 │   │   ├── Game.java          # Logique de partie
 │   │   └── AttackResponse.java
 │   ├── controller/
-│   │   └── gui/               # Contrôleurs GUI
+│   │   ├── console/           # ConsoleGameController
+│   │   └── gui/               # Contrôleurs GUI, dont GameController
 │   └── view/
+│       ├── console/           # ConsoleView
 │       └── gui/               # Vues LibGDX (menus, jeu, etc.)
 ├── lwjgl3/                    # Module desktop (LWJGL3)
 ├── assets/                    # Sprites, sons, musiques
@@ -159,6 +173,7 @@ Les assets proviennent de sources open source :
 
 ## Documentation
 
+- **Équipe et consignes de travail** : [répartition des rôles](docs/REPARTITION_ROLES.md), classes, UML, Javadoc et conventions de commits à comparer.
 - **Game Design Document** : [game design document.md](game%20design%20document.md)
 - **Javadoc** : `docs/javadoc/index.html` (fichiers HTML générés, à ouvrir en local)
 - **Couverture de code** : `docs/coverage/index.html` (rapport JaCoCo, à ouvrir en local)
@@ -193,11 +208,11 @@ Ces taux sont ceux annoncés par l'équipe pour les packages `model` et `model.a
 
 Projet universitaire Epitech - 2025
 
-| Nom                   | GitHub                                       |
-|-----------------------|----------------------------------------------|
-| Kouassi Chris Emerson | [@Crisxzu](https://github.com/Crisxzu)       |
-| James Pamara          | [@OhBadBoy](https://github.com/OhBadBoy)     |
-| Daouda Bamba          | [@Daoudbamba](https://github.com/Daoudbamba) |
+| Prénom | GitHub |
+|---|---|
+| Chris | [@Crisxzu](https://github.com/Crisxzu) |
+| James | [@OhBadBoy](https://github.com/OhBadBoy) |
+| Daouda | [@Daoudbamba](https://github.com/Daoudbamba) |
 
 ## Licence
 
